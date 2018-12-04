@@ -11,9 +11,14 @@ This app has the following features:
 
 Tic-tac-toe game tutorial based on the official React tuotiral available here [React Tic-Tac-Toe](https://reactjs.org/tutorial/tutorial.html).
 
+<<<<<<< HEAD
 ```
 Live Version: [https://teslasoftware.github.io/React-Tic-Tac-Toe](https://teslasoftware.github.io/React-Tic-Tac-Toe) 
 ```
+=======
+### Live version of the project:
+
+>>>>>>> 90b559dfb9c947e3c52718e26bca3754c3b21877
 
 ## Learn More
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
