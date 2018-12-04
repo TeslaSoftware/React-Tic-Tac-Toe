@@ -12,7 +12,7 @@ This app has the following features:
 Tic-tac-toe game tutorial based on the official React tuotiral available here [React Tic-Tac-Toe](https://reactjs.org/tutorial/tutorial.html).
 
 
-### Live Version: [https://teslasoftware.github.io/React-Tic-Tac-Toe]
+### Live Version: https://teslasoftware.github.io/React-Tic-Tac-Toe
 
 
 ## Learn More
