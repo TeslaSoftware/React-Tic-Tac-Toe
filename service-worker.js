@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/3.6.3/workbox-sw.js");
 
 importScripts(
-  "/TeslaSoftware/React-Tic-Tac-Toe/precache-manifest.a3bdb1e9f52c2f519fea0d14d87dce70.js"
+  "/React-Tic-Tac-Toe/precache-manifest.4d99e709e49d91a76c412b9bf633af99.js"
 );
 
 workbox.clientsClaim();
@@ -28,7 +28,7 @@ self.__precacheManifest = [].concat(self.__precacheManifest || []);
 workbox.precaching.suppressWarnings();
 workbox.precaching.precacheAndRoute(self.__precacheManifest, {});
 
-workbox.routing.registerNavigationRoute("/TeslaSoftware/React-Tic-Tac-Toe/index.html", {
+workbox.routing.registerNavigationRoute("/React-Tic-Tac-Toe/index.html", {
   
   blacklist: [/^\/_/,/\/[^\/]+\.[^\/]+$/],
 });
