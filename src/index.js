@@ -133,7 +133,7 @@ function Square(props){
       const moves = history.map((step, move) => {
         let desc = move ? 
           'Go to move #' + move + " . Row: " + step.row + ", Col: " + step.col : 
-          'Go to game start';
+          'Go to GAME START';
           if(this.state.stepNumber === move) desc = <b>{desc} </b>;
           return this.state.stepNumber === move? (            
             <li key={move}>
@@ -161,10 +161,12 @@ function Square(props){
         status = "It's a draw!"
       }
       else{
-        status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+        status = 'Next player : ' + (this.state.xIsNext ? 'X' : 'O');
       }
 
       return (
+        <div>
+        <div id="title">Techno Tic Tac Toe</div>
         <div className="game">
           <div>
             <Board 
@@ -178,6 +180,7 @@ function Square(props){
             <button id="reverse-order" onClick={() => this.reverseList()}>Reverse Order</button>
             <ol reversed={this.state.reversedList}>{moves}</ol>
           </div>
+        </div>
         </div>
       );
     }
