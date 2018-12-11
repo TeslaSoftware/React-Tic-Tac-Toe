@@ -47,7 +47,7 @@ function Square(props){
 
 
       return (
-        <div>
+        <div className="game-board">
           {board}
         </div>
       );
@@ -135,14 +135,16 @@ function Square(props){
           'Go to move #' + move + " . Row: " + step.row + ", Col: " + step.col : 
           'Go to game start';
           if(this.state.stepNumber === move) desc = <b>{desc} </b>;
-          return (
+          return this.state.stepNumber === move? (            
             <li key={move}>
-              <button 
-                onClick={() => this.jumpTo(move)}
-                > 
-                {desc}
-                
-                </button>
+              <button className="selected-move" onClick={() => this.jumpTo(move)}> 
+                {desc} </button>
+            </li>
+          )
+          :(            
+            <li key={move}>
+              <button onClick={() => this.jumpTo(move)}> 
+                {desc} </button>
             </li>
           );
       })
@@ -164,7 +166,7 @@ function Square(props){
 
       return (
         <div className="game">
-          <div className="game-board">
+          <div>
             <Board 
               squares={current.squares}
               onClick={(i) => this.handleClick(i)}
@@ -172,7 +174,7 @@ function Square(props){
             />
           </div>
           <div className="game-info">
-            <div>{status}</div>
+            <div className="status">{status}</div>
             <button id="reverse-order" onClick={() => this.reverseList()}>Reverse Order</button>
             <ol reversed={this.state.reversedList}>{moves}</ol>
           </div>
